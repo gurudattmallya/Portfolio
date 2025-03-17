@@ -273,7 +273,7 @@ const Portfolio: React.FC = () => {
           "Developed a comprehensive temple management system for managing sevas, donations, and bookings with modern web technologies.",
         techStack: ["Vite", "React", "Express.js", "MariaDB"],
         github: "#", // Add your project repository link
-        demo: "#", // Add your live demo link if available
+        demo: "https://youtu.be/2l3O4cZjWEs?si=IZaExc9syFy-e1TQ", // YouTube demo link
         image: "/temple-project.jpg", // Add your project screenshot
       },
       {
@@ -551,7 +551,7 @@ const Portfolio: React.FC = () => {
                       words={[
                         "Information Science Student",
                         "Tech Enthusiast",
-                        "Problem Solver"
+                        "Problem Solver",
                       ]}
                     />
                   </span>
@@ -798,6 +798,8 @@ const Portfolio: React.FC = () => {
                       </a>
                       <a
                         href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center justify-center w-12 h-12 rounded-full bg-black/50 backdrop-blur-sm text-white hover:bg-purple-500 transition-colors duration-300"
                       >
                         <ExternalLink className="w-5 h-5" />
