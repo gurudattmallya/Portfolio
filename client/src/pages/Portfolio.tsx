@@ -237,69 +237,68 @@ const Portfolio: React.FC = () => {
   };
 
   const personalInfo: PersonalInfo = {
-    name: "Deekshith Acharya",
-    title: "Creative Developer",
-    email: "your.email@example.com",
-    github: "https://github.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourusername",
+    name: "Gurudatt Ashok Mallya",
+    title: "Software Engineering Student",
+    email: "gurudutt.mallya@gmail.com",
+    github: "https://github.com/gurudattmallya", // Update with your GitHub URL
+    linkedin: "https://linkedin.com/in/gurudutt-mallya", // Update with your LinkedIn URL
     skills: [
       {
-        name: "Frontend",
+        name: "Programming",
+        items: ["C", "C++", "Java", "Python", "JavaScript"],
+      },
+      {
+        name: "Web Technologies",
+        items: ["React", "Express.js", "JavaFX", "HTML", "CSS"],
+      },
+      {
+        name: "Databases",
+        items: ["MySQL", "MariaDB"],
+      },
+      {
+        name: "Tools & Technologies",
         items: [
-          "React Js",
-          "Next Js",
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "JQuery",
-          "Bootstrap",
-          "TypeScript",
-          "Tailwind",
+          "Amazon S3",
+          "Cisco Packet Tracer",
+          "Microsoft Excel",
+          "Git",
+          "Arduino",
         ],
-      },
-      {
-        name: "Backend",
-        items: ["PHP", "Node Js", "Express Js", "MySQL", "CodeIgniter 3", "MongoDB", "PostgreSQL"],
-      },
-      { name: "Operating System", items: ["Windows", "Linux"] },
-      {
-        name: "Others",
-        items: ["Git", "GitHub", "Xampp", "Vercel", "Netlify", "VS Code", "Postman"],
       },
     ],
     projects: [
       {
-        title: "Project Alpha",
+        title: "Hate Speech Detection using ML",
         description:
-          "Revolutionary AI-powered platform that transforms user experiences with intelligent automation.",
-        techStack: ["React", "Node.js", "TensorFlow"],
+          "Developed a model to detect hate speech in Instagram comments using advanced machine learning techniques.",
+        techStack: ["TensorFlow", "React", "Apify", "Python"],
+        github: "#", // Add your project GitHub link
+        demo: "#", // Add your project demo link
+        image: "/api/placeholder/600/400", // Add project screenshot
+      },
+      {
+        title: "Gesture Controlled Video Playback",
+        description:
+          "Built an IoT system for controlling video playback using gesture recognition and ultrasonic sensors.",
+        techStack: ["Python", "ESP32", "Arduino UNO", "IoT"],
         github: "#",
         demo: "#",
         image: "/api/placeholder/600/400",
       },
       {
-        title: "Project Beta",
+        title: "Hotel Management System",
         description:
-          "Real-time collaboration tool enabling teams to work efficiently across different time zones.",
-        techStack: ["TypeScript", "WebSocket", "Redis"],
+          "Streamlined event planning and management system with comprehensive features.",
+        techStack: ["Java", "JavaFX", "Socket Programming", "MySQL"],
         github: "#",
         demo: "#",
         image: "/api/placeholder/600/400",
       },
       {
-        title: "Project Gamma",
+        title: "Quiz Application",
         description:
-          "E-commerce solution with advanced analytics and personalized shopping experiences.",
-        techStack: ["Next.js", "MongoDB", "AWS"],
-        github: "#",
-        demo: "#",
-        image: "/api/placeholder/600/400",
-      },
-      {
-        title: "Project Delta",
-        description:
-          "Mobile-first application for tracking fitness goals and nutrition with social features.",
-        techStack: ["React Native", "Firebase", "GraphQL"],
+          "Interactive Android application for testing knowledge across multiple categories.",
+        techStack: ["Java", "Android", "SQLite"],
         github: "#",
         demo: "#",
         image: "/api/placeholder/600/400",
@@ -307,54 +306,53 @@ const Portfolio: React.FC = () => {
     ],
     experience: [
       {
-        title: "Senior Frontend Developer",
-        company: "Tech Solutions Inc.",
-        period: "2022 - Present",
+        title: "Intern",
+        company: "Arisecraft Technologies",
+        period: "December 2025 - March 2025",
         description: [
-          "Led a team of 5 developers in building a modern SaaS platform",
-          "Improved application performance by 40% through code optimization",
-          "Implemented CI/CD pipelines reducing deployment time by 60%",
-          "Mentored junior developers and organized weekly knowledge sharing sessions",
+          "Worked on full-stack development",
+          // Add more details about your internship responsibilities
         ],
-        technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
+        technologies: ["React", "Express.js", "MySQL"],
       },
       {
-        title: "Full Stack Developer",
-        company: "Digital Innovations",
-        period: "2020 - 2022",
+        title: "ERP Intern",
+        company: "Echochem Labs",
+        period: "February 2023 - March 2023",
         description: [
-          "Developed and maintained multiple client web applications",
-          "Created RESTful APIs serving 100K+ daily users",
-          "Reduced server response time by 50% through database optimization",
-          "Collaborated with UX designers to implement responsive interfaces",
+          "Worked on Enterprise Resource Planning systems",
+          "Gained hands-on experience with ERP implementation",
         ],
-        technologies: ["Node.js", "Express", "MongoDB", "React"],
+        technologies: ["ERP Systems"],
       },
     ],
     education: [
       {
-        degree: "Bachelor of Technology in Computer Science",
-        institution: "Technical University",
-        period: "2016 - 2020",
-        location: "New York, USA",
-        description: "Specialized in Software Engineering and Artificial Intelligence",
+        degree: "Bachelor of Engineering in Information Science",
+        institution: "NMAM Institute of Technology",
+        period: "2021 - Present",
+        location: "Nitte, Karnataka",
+        description: "Currently pursuing Information Science and Engineering",
         achievements: [
-          "Graduated with First Class Honours",
-          "Led the University Programming Club",
-          "Winner of Annual Hackathon 2019",
+          "Cumulative GPA: 9.01/10.00",
+          // Add any academic achievements or relevant coursework
         ],
       },
       {
-        degree: "High School Diploma",
-        institution: "International School",
-        period: "2014 - 2016",
-        location: "New York, USA",
-        description: "Science and Mathematics Major",
-        achievements: [
-          "School Prefect",
-          "Mathematics Olympiad Winner",
-          "Perfect attendance record",
-        ],
+        degree: "Pre-University Education",
+        institution: "Bhandarkar's Pre-University College",
+        period: "2019 - 2021",
+        location: "Kundapura, Karnataka",
+        description: "Karnataka Pre-University Board",
+        achievements: ["Percentage Scored: 97.3%"],
+      },
+      {
+        degree: "Secondary Education",
+        institution: "Sri Venkataramana English Medium School",
+        period: "2008 - 2019",
+        location: "Kundapura, Karnataka",
+        description: "Karnataka State Board of Secondary Education",
+        achievements: ["Percentage Scored: 93.76%"],
       },
     ],
   };
@@ -382,7 +380,9 @@ const Portfolio: React.FC = () => {
       {/* Navigation Bar with scroll-based opacity */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 border-b border-white/10 transition-all duration-300 ${
-          navbarOpaque ? "bg-black/80 backdrop-blur-xl shadow-xl" : "bg-black/30 backdrop-blur-md"
+          navbarOpaque
+            ? "bg-black/80 backdrop-blur-xl shadow-xl"
+            : "bg-black/30 backdrop-blur-md"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -456,7 +456,11 @@ const Portfolio: React.FC = () => {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 aria-label="Toggle menu"
               >
-                {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                {isMenuOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <Menu className="w-6 h-6" />
+                )}
               </button>
             </div>
           </div>
@@ -520,7 +524,10 @@ const Portfolio: React.FC = () => {
       </nav>
 
       {/* Hero Section with enhanced responsiveness */}
-      <section ref={sectionRefs.home} className="relative min-h-screen flex items-center pt-16">
+      <section
+        ref={sectionRefs.home}
+        className="relative min-h-screen flex items-center pt-16"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-20">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 order-2 md:order-1 text-center md:text-left">
@@ -532,14 +539,19 @@ const Portfolio: React.FC = () => {
                   <span className="block">I'm a</span>
                   <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
                     <TypewriterEffect
-                      words={["Frontend Developer", "Backend Developer", "Network Engineer"]}
+                      words={[
+                        "Information Science Student",
+                        "Tech Enthusiast",
+                        "Problem Solver"
+                      ]}
                     />
                   </span>
                 </h1>
               </div>
               <p className="text-lg sm:text-xl text-gray-400 max-w-md mx-auto md:mx-0">
-                Crafting digital experiences that blend creativity with technical excellence.
-                Specialized in building modern web applications.
+                Crafting digital experiences that blend creativity with
+                technical excellence. Specialized in building modern web
+                applications.
               </p>
               <div className="flex flex-wrap space-y-4 sm:space-y-0 sm:space-x-6 justify-center md:justify-start">
                 <button
@@ -596,7 +608,9 @@ const Portfolio: React.FC = () => {
 
         {/* Scroll down indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden md:flex flex-col items-center space-y-2">
-          <div className="text-sm text-gray-400 tracking-wider font-light">Scroll Down</div>
+          <div className="text-sm text-gray-400 tracking-wider font-light">
+            Scroll Down
+          </div>
           <div className="relative w-6 h-9 rounded-full border-2 border-gray-400/20 flex justify-center">
             <div className="absolute top-2 w-1 h-1 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full animate-scroll-down"></div>
           </div>
@@ -631,7 +645,9 @@ const Portfolio: React.FC = () => {
                 key={index}
                 className="group relative p-6 md:p-8 bg-gradient-to-br from-white/5 via-white/10 to-white/5 rounded-xl backdrop-blur-sm hover:from-white/10 hover:via-white/15 hover:to-white/10 transition-all duration-500 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/10"
               >
-                <h3 className="text-xl font-semibold mb-4">{skillGroup.name}</h3>
+                <h3 className="text-xl font-semibold mb-4">
+                  {skillGroup.name}
+                </h3>
                 <ul className="space-y-2">
                   {skillGroup.items.map((item, i) => (
                     <li
@@ -651,7 +667,11 @@ const Portfolio: React.FC = () => {
       </section>
 
       {/* Experience Section with enhanced timeline styling */}
-      <section ref={sectionRefs.experience} className="py-20 relative" id="experience">
+      <section
+        ref={sectionRefs.experience}
+        className="py-20 relative"
+        id="experience"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <div className="inline-block text-sm font-semibold py-1 px-3 rounded-full bg-blue-400/10 text-blue-400 mb-2">
@@ -684,7 +704,11 @@ const Portfolio: React.FC = () => {
                   </div>
                 </div>
 
-                <div className={`w-full md:w-1/2 ${index % 2 === 0 ? "md:pr-12" : "md:pl-12"}`}>
+                <div
+                  className={`w-full md:w-1/2 ${
+                    index % 2 === 0 ? "md:pr-12" : "md:pl-12"
+                  }`}
+                >
                   <div className="group relative p-6 md:p-8 bg-gradient-to-br from-white/5 via-white/10 to-white/5 rounded-xl backdrop-blur-sm hover:from-white/10 hover:via-white/15 hover:to-white/10 transition-all duration-500">
                     {/* Animated line pattern background */}
                     <div className="absolute inset-0 overflow-hidden rounded-xl">
@@ -710,7 +734,9 @@ const Portfolio: React.FC = () => {
                           {exp.title}
                         </span>
                         <div className="flex items-center mt-2">
-                          <span className="text-lg text-gray-300">{exp.company}</span>
+                          <span className="text-lg text-gray-300">
+                            {exp.company}
+                          </span>
                           <span className="mx-2 text-gray-500">•</span>
                           <span className="text-purple-400 font-medium text-sm px-3 py-1 rounded-full bg-purple-400/10">
                             {exp.period}
@@ -793,7 +819,11 @@ const Portfolio: React.FC = () => {
       </section>
 
       {/* Education Section with cards */}
-      <section ref={sectionRefs.education} className="py-20 relative" id="education">
+      <section
+        ref={sectionRefs.education}
+        className="py-20 relative"
+        id="education"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <div className="inline-block text-sm font-semibold py-1 px-3 rounded-full bg-blue-400/10 text-blue-400 mb-2">
@@ -824,7 +854,9 @@ const Portfolio: React.FC = () => {
                 <p className="text-gray-400 mb-4">{edu.description}</p>
                 {edu.achievements && (
                   <div className="space-y-2">
-                    <h4 className="text-md font-medium text-gray-300">Achievements:</h4>
+                    <h4 className="text-md font-medium text-gray-300">
+                      Achievements:
+                    </h4>
                     <ul className="space-y-1">
                       {edu.achievements.map((achievement, i) => (
                         <li
@@ -846,7 +878,11 @@ const Portfolio: React.FC = () => {
       </section>
 
       {/* Contact Section with enhanced form styling */}
-      <section ref={sectionRefs.contact} className="py-20 relative" id="contact">
+      <section
+        ref={sectionRefs.contact}
+        className="py-20 relative"
+        id="contact"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <div className="inline-block text-sm font-semibold py-1 px-3 rounded-full bg-blue-400/10 text-blue-400 mb-2">
@@ -862,7 +898,8 @@ const Portfolio: React.FC = () => {
             <div className="relative bg-gradient-to-br from-white/5 via-white/10 to-white/5 rounded-xl p-6 md:p-8 backdrop-blur-sm">
               <h3 className="text-2xl font-semibold mb-4">Let's Connect</h3>
               <p className="text-gray-400 mb-6">
-                Feel free to reach out for projects, questions, or just to say hello!
+                Feel free to reach out for projects, questions, or just to say
+                hello!
               </p>
 
               <div className="space-y-4">
@@ -885,7 +922,9 @@ const Portfolio: React.FC = () => {
                     <Github className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-medium text-gray-300">GitHub</h4>
+                    <h4 className="text-sm font-medium text-gray-300">
+                      GitHub
+                    </h4>
                     <a
                       href={personalInfo.github}
                       className="text-gray-400 hover:text-purple-400 transition-colors"
@@ -901,14 +940,19 @@ const Portfolio: React.FC = () => {
                     <Linkedin className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-medium text-gray-300">LinkedIn</h4>
+                    <h4 className="text-sm font-medium text-gray-300">
+                      LinkedIn
+                    </h4>
                     <a
                       href={personalInfo.linkedin}
                       className="text-gray-400 hover:text-pink-400 transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {personalInfo.linkedin.replace("https://linkedin.com/in/", "")}
+                      {personalInfo.linkedin.replace(
+                        "https://linkedin.com/in/",
+                        ""
+                      )}
                     </a>
                   </div>
                 </div>
@@ -919,7 +963,10 @@ const Portfolio: React.FC = () => {
               <h3 className="text-2xl font-semibold mb-4">Send a Message</h3>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-300 mb-1"
+                  >
                     Your Name
                   </label>
                   <input
@@ -934,7 +981,10 @@ const Portfolio: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-300 mb-1"
+                  >
                     Email Address
                   </label>
                   <input
@@ -949,7 +999,10 @@ const Portfolio: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-1">
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium text-gray-300 mb-1"
+                  >
                     Subject
                   </label>
                   <input
@@ -964,7 +1017,10 @@ const Portfolio: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-300 mb-1"
+                  >
                     Message
                   </label>
                   <textarea
@@ -1009,7 +1065,9 @@ const Portfolio: React.FC = () => {
               <div className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
                 {personalInfo.name}
               </div>
-              <p className="text-gray-400 mt-1">Professional Fullstack Developer</p>
+              <p className="text-gray-400 mt-1">
+                Professional Fullstack Developer
+              </p>
             </div>
             <div className="flex space-x-4">
               <a
@@ -1040,7 +1098,8 @@ const Portfolio: React.FC = () => {
             </div>
           </div>
           <div className="mt-8 text-center text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
+            &copy; {new Date().getFullYear()} {personalInfo.name}. All rights
+            reserved.
           </div>
         </div>
       </footer>
@@ -1075,5 +1134,3 @@ const NavLink: React.FC<NavLinkProps> = ({ children, active, onClick }) => {
 };
 
 export default Portfolio;
-
-
