@@ -268,6 +268,15 @@ const Portfolio: React.FC = () => {
     ],
     projects: [
       {
+        title: "Temple Seva Management",
+        description:
+          "Developed a comprehensive temple management system for managing sevas, donations, and bookings with modern web technologies.",
+        techStack: ["Vite", "React", "Express.js", "MariaDB"],
+        github: "#", // Add your project repository link
+        demo: "#", // Add your live demo link if available
+        image: "/temple-project.jpg", // Add your project screenshot
+      },
+      {
         title: "Hate Speech Detection using ML",
         description:
           "Developed a model to detect hate speech in Instagram comments using advanced machine learning techniques.",
