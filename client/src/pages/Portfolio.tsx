@@ -302,7 +302,7 @@ const Portfolio: React.FC = () => {
           "Built an IoT system for controlling video playback using gesture recognition and ultrasonic sensors.",
         techStack: ["Python", "ESP32", "Arduino UNO", "IoT"],
         github: "#",
-        demo: "#",
+        demo: "https://youtu.be/l2jtR2QFlkA?si=1GzXwEQYBV6aTTNu", // Updated YouTube link
         image: "/api/placeholder/600/400",
       },
       {
