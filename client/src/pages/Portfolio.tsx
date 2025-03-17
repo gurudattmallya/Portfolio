@@ -8,6 +8,7 @@ import {
   Mail,
   Menu,
   X,
+  Youtube, // Add this line
 } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -112,7 +113,7 @@ const TypewriterEffect: React.FC<{ words: string[] }> = ({ words }) => {
           return word.slice(0, prev.length + 1);
         });
       },
-      isDeleting ? deletingSpeed : typingSpeed,
+      isDeleting ? deletingSpeed : typingSpeed
     );
 
     return () => clearTimeout(timeout);
@@ -129,10 +130,15 @@ const TypewriterEffect: React.FC<{ words: string[] }> = ({ words }) => {
 const Portfolio: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [activeSection, setActiveSection] = useState<string>("home");
-  const [mousePosition, setMousePosition] = useState<MousePosition>({ x: 0, y: 0 });
+  const [mousePosition, setMousePosition] = useState<MousePosition>({
+    x: 0,
+    y: 0,
+  });
   const [formData, setFormData] = useState<ContactForm>(new ContactForm());
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
   const [showScrollTop, setShowScrollTop] = useState<boolean>(false);
   const [navbarOpaque, setNavbarOpaque] = useState<boolean>(false);
 
@@ -146,7 +152,9 @@ const Portfolio: React.FC = () => {
     contact: useRef<HTMLElement>(null),
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -198,7 +206,10 @@ const Portfolio: React.FC = () => {
           const offsetTop = element.offsetTop;
           const offsetHeight = element.offsetHeight;
 
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+          if (
+            scrollPosition >= offsetTop &&
+            scrollPosition < offsetTop + offsetHeight
+          ) {
             setActiveSection(section);
           }
         }
@@ -787,23 +798,36 @@ const Portfolio: React.FC = () => {
                     alt={project.title}
                     className="w-full aspect-video object-cover transform group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/80 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {/* Modified overlay with better mobile visibility */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/80 to-transparent opacity-80" />
+                  <div className="absolute inset-0 flex items-center justify-center opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="flex space-x-4">
                       <a
                         href={project.github}
-                        className="flex items-center justify-center w-12 h-12 rounded-full bg-black/50 backdrop-blur-sm text-white hover:bg-blue-500 transition-colors duration-300"
+                        className="flex items-center justify-center w-12 h-12 rounded-full bg-black/70 backdrop-blur-sm text-white hover:bg-blue-500 transition-colors duration-300"
                       >
                         <Github className="w-5 h-5" />
                       </a>
-                      <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center w-12 h-12 rounded-full bg-black/50 backdrop-blur-sm text-white hover:bg-purple-500 transition-colors duration-300"
-                      >
-                        <ExternalLink className="w-5 h-5" />
-                      </a>
+                      {project.demo.includes("youtu.be") ||
+                      project.demo.includes("youtube.com") ? (
+                        <a
+                          href={project.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center justify-center w-12 h-12 rounded-full bg-black/70 backdrop-blur-sm text-white hover:bg-red-500 transition-colors duration-300"
+                        >
+                          <Youtube className="w-5 h-5" />
+                        </a>
+                      ) : (
+                        <a
+                          href={project.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center justify-center w-12 h-12 rounded-full bg-black/70 backdrop-blur-sm text-white hover:bg-purple-500 transition-colors duration-300"
+                        >
+                          <ExternalLink className="w-5 h-5" />
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>
